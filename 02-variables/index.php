@@ -21,13 +21,26 @@ $a /= $b;
 echo '<br>'.round($a,3).'<br>';
 
 //exercie
-$PHT =50;
-$TVA =10.'%';
+$PHT =172;
+$TVA =20;
+$PTT= $PHT+($PHT*$TVA/100);
+echo '<br>le prix hors taxe :'. $PHT .' euros';
+echo '<br>la TVA :'.$TVA.'%';
+echo '<br>le prix TTC :'.'<strong>'.$PTT .' euros';
+//calculer l'age d'une personne en renseignant son anne de naissance
+$annee=1993;
+$dateac=date('Y');
+ $age=$dateac-$annee;
 
+echo '<br> votre age est de:'.$age .'ans <br>';
 
-
-
-
+//incrementation et decrementation
+$num=0;
+$num++;
+echo $num.'<br>';
+$t=10;
+$t--;
+echo "$t <br>";
 
 
 
