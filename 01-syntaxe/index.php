@@ -39,7 +39,31 @@ echo "$txt tout le mondss";
 $fruit1='kiwi';
 $fruit1='pomme';
 $fruit2='poire';
-
-echo '<br>'.$fruit1.' '.$fruit2;
+$fruit2.='fraise';
+echo '<br>'.$fruit1.' '.$fruit2,'<br>';
+echo $fruit2
 
 ?>
+<!-- on peut meme faire un switch entre html et php mais faut
+fermer le php et apre pour retourner faut le recree -->
+<?php
+$titre ='test de ce truc la ';
+?>
+<h1><?php echo $titre?> </h1>
+<!-- c'est le racourci ?= -->
+<h1><?= $titre?> </h1>
+<!-- exercice  -->
+<?php
+
+$data1='Hello';
+$data2='les terriens';
+$data3='Mars';
+$data4='planete';
+echo '<p>'.$data1 .', '.$data2.'.Je viens de la '.$data4.' '.$data3.'.'.'</p>'
+
+?>
+
+<p><?=$data1 .', '.$data2.'.Je viens de la '.$data4.' '.$data3.'.'?></P>
+
+
+
