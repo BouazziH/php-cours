@@ -58,12 +58,12 @@ foreach($fruit as $value){
 
 //EXECICE
 //construire un tableau a l'aide de la boucle for contenant des nombres de 34 a78;
-$t='';
+$t=[];
 for ($i=34; $i <=78 ; $i++) { 
-    $t.=$i.',';
+  array_push($t,$i);
 }
 
-echo $t;
+print_r($t);
 
 
 echo '</pre>';
