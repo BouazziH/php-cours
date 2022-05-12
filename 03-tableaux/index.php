@@ -28,14 +28,43 @@ echo '<hr>';
  //EXERCICE afficher la moyenne des note
 $note=[12,5,16,7];
 
-$n1=$note[0];
-$n2=$note[1];
-$n3=$note[2];
-$n4=$note[3];
-$moyenne=($n1+$n2+$n3+$n4)/4;
+$n1 = $note[0];
+$n2 = $note[1];
+$n3 = $note[2];
+$n4 = $note[3];
+$moyenne = ($n1+$n2+$n3+$n4)/4;
 //echo '<br>'.$moyenne;
 $tab3 = array_merge($tableau2,$tableau,$note); // MERGE assemble plusieurs tableau 
-var_dump($tab3);
+////var_dump($tab3);
+
+
+// boucle FOR
+for ($i=0; $i <count($tableau2) ; $i++) 
+{ 
+    //echo $tableau2[$i].'<br>';
+}
+
+$fruit = ['banane','ananas','pomme','fraise'];
+$html = ''; // declarer une variable vide
+for ($i=0; $i <count($fruit) ; $i++) { 
+   $html .= $fruit[$i].','; // remplir la variable avec des les valeur de i en concatenation 
+}
+//echo $html;
+
+foreach($fruit as $value){
+//echo $value.'<br>';
+
+}
+
+//EXECICE
+//construire un tableau a l'aide de la boucle for contenant des nombres de 34 a78;
+$t='';
+for ($i=34; $i <=78 ; $i++) { 
+    $t.=$i.',';
+}
+
+echo $t;
+
 
 echo '</pre>';
 
