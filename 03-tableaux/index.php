@@ -83,7 +83,7 @@ $chaine=implode('-',$age);// implode prend les valeurs de tableau et il les sepa
 echo $chaine.'<br>';
 //*** pour ajouter d'un element avec ca valeur au tableau 
 $age['hakeem']=8;// **********
-//********pour modifier une valeur
+//********pour modifier une valeur f
 $age['hakeem']=9;
 print_r($age);
 
@@ -114,6 +114,70 @@ $var .='<li>' . $key . ' a obtenu ' . $value.'/20 </li>';
 }
 $var.='</ul>';
 echo $var.'<hr>';
+
+
+$tt=array_merge($NoteExam,$age);//assembler deux tableaux
+print_r($tt);
+echo'<hr>';
+$planetes= ['mars','terre','pluton','venus','jupiter'];
+//asort($planetes);//fonction qui permet d'afficher en order alphabitique valeur
+//arsort($planetes);// order decroissant valeur
+//krsort($planetes); // order decroissant des index
+//ksort($planetes);//ordre croissant des index 
+rsort($planetes);
+print_r ($planetes);
+
+
+//***********EXERCICE */
+// Créer un tableau avec les mois de l'annnée
+// - afficher la valeur de la 5 ligne de ce tableau
+// - afficher la vleur de l'index 10
+// - modifier le mois d'avril en le mettant en majuscule
+//***************************/
+// Créer un tableau associatif des departements de la region normandie
+// avec le nom du departement en valeur et son code postale en index
+// - afficher la valeur de l'index 27
+// - ajouter le departement et code postale de la ville de Brest
+// - parcourir le tableau des departements et afficher chaque departement dans un parapraphe p de la façon suivante :
+// Le 'nom du departement' possede le code postale suivant :  'code pastale'
+
+//exe1
+$mois= ['janvier','fevrier','mars','avril','mai','juin','juillet','aout','septembre','octobre','novembre','decembre'];
+
+print_r('<br> la valeur de la 5 eme ligne :'.$mois[4]);
+print_r('<br> la valeur du 10 eme index :'.$mois[10].'<br>');
+//modif
+$mois[3]= 'AVRIL';
+
+print_r($mois);
+
+//exe2
+
+$region=[14=>'cavaldos',27=>'eure',50=>'manche',61=>'orne',76=>'seine-maritime'];
+echo '<hr>';
+
+echo '<br>';
+print_r($region[27]);
+$region[29]='brest';
+print_r($region);
+
+$z='';
+foreach($region as $key => $value)
+{
+$z .='<p> Nom de departement' . $key . ' possede le code postale suivant: ' . $value.' </p><br>'; 
+
+}
+
+echo $z;
+
+
+
+
+
+
+
+
+
 
 
 
