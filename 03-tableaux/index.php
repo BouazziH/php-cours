@@ -153,18 +153,20 @@ print_r($mois);
 
 //exe2
 
-$region=[14=>'cavaldos',27=>'eure',50=>'manche',61=>'orne',76=>'seine-maritime'];
+$region=[14=>'Cavaldos',27=>'Eure',50=>'Manche',61=>'Orne',76=>'Seine-Maritime'];
 echo '<hr>';
 
 echo '<br>';
 print_r($region[27]);
-$region[29]='brest';
+echo '<br>';
+$region[29]='Brest';
+echo '<br>';
 print_r($region);
 
 $z='';
 foreach($region as $key => $value)
 {
-$z .='<p> Nom de departement' . $key . ' possede le code postale suivant: ' . $value.' </p><br>'; 
+$z .='<p>' . $value . ' possede le code postale suivant: ' . $key.' </p><br>'; 
 
 }
 
