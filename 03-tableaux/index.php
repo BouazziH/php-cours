@@ -153,7 +153,7 @@ print_r($mois);
 
 //exe2
 
-$region=[14=>'Cavaldos',27=>'Eure',50=>'Manche',61=>'Orne',76=>'Seine-Maritime'];
+$region=[14=>'cavaldos',27=>'eure',50=>'manche',61=>'orne',76=>'seine-Maritime'];
 echo '<hr>';
 
 echo '<br>';
@@ -166,14 +166,27 @@ print_r($region);
 $z='';
 foreach($region as $key => $value)
 {
-$z .='<p>' . $value . ' possede le code postale suivant: ' . $key.' </p><br>'; 
+$z .='<p>' .ucfirst($value)  . ' possede le code postale suivant: ' . $key.' </p>'; 
 
 }
 
 echo $z;
+echo '<hr>';
 
 
+//*********TABLEAUX MULTI DIMENSIONELLE */
+$tab6=['voiture' => 'mercedes','nombre' =>[1,2,3],'planetes' =>['mars','terre']];
+  print_r($tab6);
 
+/**************EXERCICE */
+$tt =[];
+$tt[] =['A','B','C'];
+$tt[] =['Q','R','T'];
+$tt[] =['E','U','P','I'];
+
+// ECRIRE LE MOT CEPPIC
+echo '<hr>';
+echo($tt[0][2].$tt[2][0].$tt[2][2].$tt[2][2].$tt[2][3].$tt[0][2]);
 
 
 
