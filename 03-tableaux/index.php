@@ -187,6 +187,11 @@ $tt[] =['E','U','P','I'];
 // ECRIRE LE MOT CEPPIC
 echo '<hr>';
 echo($tt[0][2].$tt[2][0].$tt[2][2].$tt[2][2].$tt[2][3].$tt[0][2]);
+echo '<hr>';
+// exe 2
+$tt2=[[0,2],[2,[2,3]]];
+
+echo($tt2[1][1][1]);
 
 
 
