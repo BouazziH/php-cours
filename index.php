@@ -14,5 +14,6 @@
         <li><a href="./03-tableaux/php-jason.php">Php jason</a></li>
     </ul>
     <li><a href="./04-conditions/index.php">les conditions</a></li>
+    <li><a href="./05-boucles/index.php">les boucles</a></li>
 
 </ul>

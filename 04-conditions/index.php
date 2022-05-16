@@ -140,6 +140,10 @@ print_r($articles);
 echo '<hr>'; 
 echo '<br>';
 
+var_dump($articles);
+echo '<hr>'; 
+echo '<br>';
+
 
   
    if(!empty($articles[1]))
@@ -149,10 +153,15 @@ echo '<br>';
 }
 else
 echo "ya pas d'article vide";
+echo '<hr>'; 
+echo '<br>';
+//******OPERATEUR TERNAIR */
+// CONDITION ? TRUE :false
+ echo !empty($articles[0]) ? $articles[0] : "il n'as pas d'article <br>";
+// deuxieme methode
+ $envar= !empty($articles[0]) ? $articles[0] : "il n'as pas d'article";
 
-
-
-
+echo "afficher le resulat sous var <strong>".$envar;
 
 
 
