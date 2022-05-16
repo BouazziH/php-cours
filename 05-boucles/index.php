@@ -42,3 +42,46 @@ while ($annee <= date('Y')) { ?>
 
 </body>
 </html>
+<?php
+
+///Do WHILE
+echo "<hr>";
+echo "<br>";
+$y =0;
+do {
+    echo "Nombre : $y <br>";
+    $y++;
+} while ($y <= 10);
+//====================
+//********foreach
+//==================
+echo "<hr>";
+echo "<br>";
+$tabs =[1,2,3,4,5,6];
+foreach ($tabs as $tab) {
+   echo "Nombre $tab  <br>";
+}
+echo "<hr>";
+echo "<br>";
+$tabs2 =["article1","article2","article3"];
+foreach ($tabs2 as $index =>$article) {
+    echo "$index - $article <br>";
+ }
+echo "<hr>";
+echo "<br>";
+$tabs3 =["nom"=>"durand","prenom"=>"michel","age"=>28];
+
+foreach ($tabs3 as $key =>$value) {
+    echo "$key : $value <br>";
+ }
+
+
+
+
+
+
+
+
+
+
+?>
