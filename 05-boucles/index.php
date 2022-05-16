@@ -37,7 +37,7 @@ while ($annee <= date('Y')) { ?>
         
       
     <?php } ?>
-    <h5>le nombre de jour est :<?php echo (365*($annee-1971)) ?></h5>
+    <h5>le nombre de jours est de :<?php echo (365*($annee-1971)) ?></h5>
   </ul>
 
 </body>
