@@ -191,28 +191,39 @@ echo '<hr>';
 // exe 2
 $tt2=[[0,2],[2,[2,3]]];
 
-echo($tt2[1][1][1]);
+echo($tt2[1][1][1]);// afficher  la valeur 3
 
+/***********exercie4 */
+$produits=[['nom' =>'chaussetes','prix'=>10],['nom' =>'velo','prix'=>500],['nom' =>'carote','prix'=>2],['nom' =>'truc','prix'=>9]];
+print_r($produits);
 
-
-
-
-
-
-
-
-
-
-
-
+//boucler sur le tableau prosuits en affichant le nom du produit selon le modele :
+// 'nom du poduit' : 'prix' £
+//dans une liste ul , le 'noom du produit' dans un h3 et le prix dans un p
 
 
 
 
 echo '</pre>';
 
-
-
-
-
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>Produits</h1>
+<ul>
+    <?php foreach($produits as $produit) { ?>
+        <li>
+            <h3><?php echo $produit['nom']; ?></h3>
+            <p><?php echo $produit['prix']; ?> €</p>
+        </li>
+    <?php } ?>
+</ul>
+</body>
+</html>
