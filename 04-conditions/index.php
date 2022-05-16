@@ -1,12 +1,13 @@
 <?php
-/* les conditions < 
- > 
- >= 
- <= 
- == 
- ===
-  != 
- !==
+/* les conditions 
+< inferieur
+ > superieur
+ >= superieur ou egale
+ <= inferieur ou egale
+ == il fait le test  sur la valeur
+ ===il fait le teste sur la valeur et le type
+ != fait la condition sur le type
+ !== fait la condition sur la valeur
 *///////////////////////////
 // if/elseif/else
 ///////////////////////
@@ -30,28 +31,99 @@ echo '<hr>';
 $h= date('H');
 if($h<18)
 {
-    echo'vous etes le <strong>matin</strong>';
+    echo'on est le <strong>matin</strong>';
 } 
 else
 {
-    echo'vous etes le <strong>soir</strong>';
+    echo'on est le <strong>soir</strong>';
 
 }
 
 //avec la condition if/elseif/else afficher si on est la matin l'apres midi ou le soir
 echo '<hr>';
 //$h= date('H');
-$h=13;
+$h=21;
 if($h<12)
 {
-    echo'vous etes le <strong>matin</strong>';
+    echo'on est le <strong>matin</strong>';
 } 
 elseif($h>=12 && $h<=18)
 {
-    echo"vous etes l' <strong>apres midi</strong>";
+    echo"on est l' <strong>apres midi</strong>";
 }
 else
 {
-    echo'vous etes le <strong>soir</strong>';
+    echo'on est le <strong>soir</strong>';
 
 }
+echo '<hr>';
+$a =20;
+$b =5;
+$c1 =10;
+$c2 ='10';
+if ($b !=3)
+{
+    echo "la variable $b n'est pas egale a 3";
+}
+echo '<hr>';
+//************************************************** */
+//== il fait le test  sur la valeur
+ //===il fait le teste sur la valeur et le type
+/*/************************************* */
+if($c1==$c2)
+{
+    echo"message testee $c1 == $c2";
+}
+echo '<hr>';
+echo '<br>';
+
+// != fait la condition sur le type
+// !== fait la condition sur la valeur
+if($c2 !=10)
+{
+    echo'teste !=';
+}
+
+echo '<hr>';
+echo '<br>';
+///************** */
+//switch/case
+$couleur ='vert';
+
+switch ($couleur) {
+    case 'rouge':
+        echo 'votre couleur favorite est le rouge';
+        break;
+    case "blue" :
+        echo 'votre couleur favorite est le blue';
+        break;
+        case "yellow" :
+            echo 'votre couleur favorite est le yellow';
+            break;
+    default:
+       echo "votre couleur favorite est ni le rouge ni le blue ni le jaune";
+        break;
+}
+echo '<hr>'; 
+echo '<br>';
+//==============
+// empty /isset
+//==============
+$var1=02;
+$var2='';
+// empty test si la valeur est vide :0,'',false,null ou non definit
+
+if(empty($var1))
+{
+echo"le var2 est vide";
+
+}
+else
+{
+    var_dump(empty($var1));
+}
+ 
+
+
+
+?>
