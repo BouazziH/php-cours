@@ -74,6 +74,19 @@ $tabs3 =["nom"=>"durand","prenom"=>"michel","age"=>28];
 foreach ($tabs3 as $key =>$value) {
     echo "$key : $value <br>";
  }
+ // avec une boucle for afficher les nombres de 34 a 89  separer une "," l'affichage ne doit pas se terminer par une vergule
+ echo "<hr>";
+echo "<br>";
+ for ($i=34; $i <=89 ; $i++) {
+     if($i<=89)
+     {
+      echo "$i ,";
+     } 
+     else
+     {
+        echo "$i  ";  
+    }
+ }
 
 
 
