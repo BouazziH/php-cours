@@ -17,7 +17,7 @@ $people = [
         'nom' => 'Dupond',
         'email' => 'ludu@gmail.com'
     ]
-    ];
+];
 echo '<pre>';
 // print_r($people);
 
