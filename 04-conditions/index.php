@@ -36,3 +36,21 @@ else
     echo'vous etes le <strong>soir</strong>';
 
 }
+
+//avec la condition if/elseif/else afficher si on est la matin l'apres midi ou le soir
+echo '<hr>';
+//$h= date('H');
+$h=13;
+if($h<12)
+{
+    echo'vous etes le <strong>matin</strong>';
+} 
+elseif($h>=12 && $h<=18)
+{
+    echo"vous etes l' <strong>apres midi</strong>";
+}
+else
+{
+    echo'vous etes le <strong>soir</strong>';
+
+}
