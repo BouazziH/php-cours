@@ -122,7 +122,37 @@ else
 {
     var_dump(empty($var1));
 }
- 
+echo '<hr>'; 
+echo '<br>';
+//*************ISSET */
+//ISSET verifie si la variable est differente de NULL
+if(isset($var2))
+{
+    echo"test";
+}
+echo '<hr>'; 
+echo '<br>';
+$articles= ["","article 1",null];
+// faire une codition sur ce tableau :tester l'article a l'index 0 si il est non vide
+ //, si non afficher "il n'ya pas d'articles"
+// cree une branch article, que vous fusionerez avec MAIN l'orsque lexercice est fini
+print_r($articles);
+echo '<hr>'; 
+echo '<br>';
+
+
+  
+   if(!empty($articles[1]))
+{
+    echo $articles[1];
+
+}
+else
+echo "ya pas d'article vide";
+
+
+
+
 
 
 
