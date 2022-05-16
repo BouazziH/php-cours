@@ -10,16 +10,17 @@
 *///////////////////////////
 // if/elseif/else
 ///////////////////////
-$age = 20;
-if ($age >= 18){
-    echo 'Vous avez le droit de voté';
+$age = 26;
+if ($age < 18){
+    echo "Vous n'avez pas le droit de voté car votre age et de : $age ans";
+
 }
-/* elseif($age<=25 || $age>=18)//elseif faut rajouter une condition
+elseif( $age>=18 && $age<=25  )//elseif faut rajouter une condition
 {
     echo 'Vous avez le droit de voté car votre age et entre 18 et 25';
-} */
+}
 else{
-    echo "Vous n'avez pas le droit de voté car votre age et de : $age ans";
+    echo 'Vous avez le droit de voté';
 }
 echo ("<br>");
 $heure = date('H').' heure';
