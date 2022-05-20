@@ -22,5 +22,46 @@ Vous trouverez une capture du resultat attendu.
  */
 $jasonf=file_get_contents("persons.json");
 
-$tab[]=json_decode($jasonf,true);
-print_r($tab);
+$persons=json_decode($jasonf,true);
+echo "<pre>";
+//var_dump($tab);
+foreach ($persons as $key => $value) {
+    
+    if($value['name'] === 'Raymond Jimenez')
+    {
+       var_dump($value['friends'][1]['name']) ;
+    }
+ 
+}
+echo '<hr>';
+foreach ($persons as $key => $value) {
+    
+    if($value['name'] === 'Ball Shaffer')
+    {
+     echo 'La couleur des yeux de Ball Shaffer est : <strong>'. $value['eyeColor'] ;
+    }
+    
+}
+echo '<hr>';
+
+
+foreach ($persons as $key => $value)
+ {
+    echo '<img src="' . $value['picture'] . '"alt="picture">';    
+ echo '<p>'.'Nom :'.$value['name'].'</p>';  
+ echo '<p>'.'Age :'.$value['age'].'</p>';  
+ echo '<p>'.'Couleur des yeux'.$value['eyeColor'].'</p>';  
+ echo '<p>'.'Email :'.$value['email'].'</p>';  
+ echo '<p>'.'fruit prefere :'.$value['favoriteFruit'].'</p>';  
+ echo'<p>';
+ if ($value['isActive'] === true)  echo 'ACTIF'. '</p>'; 
+ echo '<p>';
+ $tag=implode(",", $value['tags']);
+ echo 'Tags: '.$tag.'</p>';
+
+}
+echo '<hr>';
+
+echo "</pre>";
+//$date_jour = $tab->{'friends'}->{'favoriteFruit'};
+//echo $date_jour;
