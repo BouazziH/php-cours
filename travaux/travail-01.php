@@ -50,5 +50,35 @@ echo '</tr>';
 } 
 
 echo '</table>';
+
+echo '<table border="1">';
+$f='';
+$trav=[25,03,35,11];
+//print_r($trav);
+echo '<tr>';
+
+    echo'<td>°C</td>';
+    
+    echo'<td>°F</td>';
+  
+    echo '</tr>';
+    
+for ($i=0; $i < count($trav) ; $i++) 
+{ 
+    
+$f=$trav[$i]*9/5+32;
+echo'<tr>';
+
+echo '<td>'.$trav[$i].'</td>';
+
+echo '<td>'.$f.'</td>';
+
+echo '</tr>';
+
+
+
+} 
+
+echo '</table>';
 ?>
 
