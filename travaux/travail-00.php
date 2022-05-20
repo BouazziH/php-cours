@@ -14,15 +14,15 @@ etc ...
 $tab0=[27,15,34,379,248,5643,81,211,999,142,300,572];
 
 for ($i=0; $i < count($tab0) ; $i++) 
-{ 
+{ echo '<ul>';
    // print_r($tab0[$i].',');
     if ($tab0[$i]%2==0 )
      {
-        echo "$tab0[$i] : est paire .<br>";
+        echo "<li>$tab0[$i] : est paire </li><br>";
 
     }
     else{
-        echo "$tab0[$i] : est impaire .<br>";
+        echo "<li>$tab0[$i] : est impaire </li><br>";
     }
-
+    echo '</ul>';
 }
