@@ -20,3 +20,7 @@ Travail-02 :
 
 Vous trouverez une capture du resultat attendu.
  */
+$jasonf=file_get_contents("persons.json");
+
+$tab[]=json_decode($jasonf,true);
+print_r($tab);
